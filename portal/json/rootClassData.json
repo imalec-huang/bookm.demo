@@ -1,0 +1,10 @@
+{
+    "rows": [
+        { "fID": "r001", "fClassName": "本馆信息", "pageName": "intro", "imgName": "intro.png" },
+        { "fID": "r002", "fClassName": "读者中心", "pageName": "login", "imgName": "login.png" },
+        { "fID": "r003", "fClassName": "馆藏资源", "pageName": "search", "imgName": "search.png" },
+        { "fID": "r004", "fClassName": "虚拟体验", "pageName": "intro", "imgName": "artest.png" },
+        { "fID": "r005", "fClassName": "社交平台", "pageName": "platform", "imgName": "platform.png" },
+        { "fID": "r006", "fClassName": "联系我们", "pageName": "feedback", "imgName": "feedback.png" }
+    ]
+}

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%" class="no-js">  
+  <head xmlns=""> 
+    <meta charset="utf-8"/>  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes"/>  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>  
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>  
+    <script src="../../../v_00c8278655054a96a9a7b44e69b0f38cl_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"/>  
+    <script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>  
+    <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" &amp;&amp; (mode!="2") &amp;&amp; (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents &amp;&amp; x5AppAgents.length &gt; 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i &lt; version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i &lt;= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i&lt;items.length; i++){
+							if (mode == "3"){
+								if (items[i] &amp;&amp; (items[i].indexOf("v_") === 0) 
+										&amp;&amp; (items[i].indexOf("l_") !== -1)
+										&amp;&amp; (items[i].indexOf("s_") !== -1)
+										&amp;&amp; (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] &amp;&amp; (items[i].indexOf("v-")===0) &amp;&amp; (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&amp;" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&amp;url=" + path;
+						if (query)
+							url += "&amp;" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+									versionInfo.resourceInfo.isNewVersion = true;
+								};
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") &amp;&amp; window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (versionInfo.resourceInfo &amp;&amp; versionInfo.resourceInfo.version &amp;&amp; (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									if (query){
+										path = path + "?" + query;
+									}
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>  
+    <link rel="stylesheet" href="../../../v_7f070264d577412f8fe19d485f8113f9l_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"/>
+    <link rel="stylesheet" href="../../../v_bded75a7b2a94130ba49cc5f37d5dc55l_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/common/css/scrollable,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/dataTables/css/dataTables,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"/>
+  </head>  
+  <body xmlns="" style="width:100%;height:100%;margin: 0;"> 
+    <script intro="none"/>  
+    <div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block">
+      <div class="main13 cuM7nay" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuM7nay" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+        <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cuM7nay{color: rgb(33, 33, 33)} .text-danger.cuM7nay{color: rgb(81, 197, 212)} .thumbnail.cuM7nay{margin-bottom: 0; padding: 8px 0} .tb-text-del.cuM7nay{text-decoration: line-through} .tb-line.cuM7nay{border-right: 1px solid rgb(209, 209, 209)} .tb-nopadding.cuM7nay{padding-left: 0; padding-right: 0} .x-cards.cuM7nay{padding-top: 0} .panel.panel-default.cuM7nay{margin-bottom: 10px} .row.cuM7nay{margin: 0} h4.cuM7nay{margin-top: 0} .tb-img.cuM7nay{width: 100%; height: 251px} .tb-trans.cuM7nay .x-panel-top.cuM7nay{z-index: 100} .tb-trans.cuM7nay .x-panel-top.cuM7nay .x-titlebar.cuM7nay{background: none} .tb-trans.cuM7nay .x-panel-content.cuM7nay{top: 0 !important} .tb-trans.x-panel.cuM7nay .no-iosstatusbar.cuM7nay &gt; .x-panel-content.cuM7nay{top: -20px !important} .tb-box.cuM7nay .tb-backBtn.cuM7nay, .tb-box.cuM7nay .tb-cartBtn.cuM7nay, .tb-box.cuM7nay .tb-moreBtn.cuM7nay{width: 40px; height: 40px; border-radius: 65px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.4)} .tb-cartBtn.cuM7nay{margin-top: -7px} .x-popOver-overlay.cuM7nay{background-color: rgb(0, 0, 0)} .tb-tabs.cuM7nay{padding-bottom: 10px; background-color: rgb(239, 239, 239)} .tb-tabs.cuM7nay a.btn.cuM7nay{color: rgb(102, 102, 102); background-color: rgb(255, 255, 255)} .tb-tabs.cuM7nay .btn.active.cuM7nay{border-bottom: 2px solid rgb(81, 197, 212); color: rgb(81, 197, 212)} .btn-icon-top.cuM7nay span.cuM7nay{font-size: 12px} .x-panel-bottom.cuM7nay{border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211)} .x-panel-bottom.cuM7nay .btn.cuM7nay{color: rgb(102, 102, 102); padding: 3px 0 0 0} .x-panel-bottom.cuM7nay .btn.cuM7nay:nth-child(2){border-left: 1px solid rgb(220, 220, 220); border-right: 1px solid rgb(220, 220, 220)} .tb-shopping.cuM7nay .btn.cuM7nay{height: 48px; font-size: 14px; margin: 0; padding: 0; border-radius: 0; box-shadow: none; border: none; box-sizing: none; background: none; color: rgb(255, 255, 255)} .tb-shopping.cuM7nay .btn.cuM7nay:first-child{background-color: rgb(81, 197, 212)} .tb-shopping.cuM7nay .btn.cuM7nay:last-child{background-color: rgb(81, 197, 212)} .x-popOver.cuM7nay .x-popOver-overlay.cuM7nay{background-color: rgb(0, 0, 0)} .x-popOver.cuM7nay .x-popOver-content.cuM7nay{width: 100%; background-color: rgb(255, 255, 255); bottom: 0 !important} .tb-colorImg.cuM7nay{position: absolute; top: -20px; left: 10px; width: 110px; height: 120px} .tb-title.cuM7nay{padding: 20px 0 0 130px} .tb-close.cuM7nay{font-size: 30px} .tb-colorList.cuM7nay .col.cuM7nay{padding-left: 0; padding-right: 10px; margin-bottom: 10px} .tb-colorList.cuM7nay .col.cuM7nay div.cuM7nay{line-height: 30px; background-color: rgb(239, 239, 239); border-radius: 5px} .tb-colorList.cuM7nay .col.cuM7nay div.current.cuM7nay{background-color: rgb(81, 197, 212); color: rgb(255, 255, 255)} .tb-colorOk.cuM7nay{background-color: rgb(81, 197, 212); color: rgb(255, 255, 255); border-radius: 0} .xxx.cuM7nay, .xxa.cuM7nay{background-color: rgb(81, 197, 212); color: white; border-color: white} .xxa.cuM7nay:HOVER{background-color: white; color: rgb(81, 197, 212); border-color: rgb(81, 197, 212)} .tb-tabs.cuM7nay.cuM7nay .btn.active.cuM7nay.cuM7nay{color: rgb(81, 197, 212); border-bottom-color: rgb(81, 197, 212)}</style>  
+        <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuM7nay" class="cuM7nay"/>  
+        <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cuM7nay" xid="popOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;position&quot;:&quot;bottom&quot;}" __cid="cuM7nay"> 
+          <div class="x-popOver-overlay cuM7nay" xid="div2" __cid="cuM7nay"/>  
+          <div class="x-popOver-content cuM7nay" xid="div3" __cid="cuM7nay"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right tb-close text-black cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-close-outline&quot;}" __cid="cuM7nay"> 
+              <i xid="i17" class="icon-ios7-close-outline cuM7nay" __cid="cuM7nay"/>  
+              <span xid="span35" __cid="cuM7nay" class="cuM7nay"/> 
+            </a>  
+            <img src="../../../v_67d7eae8e8324a4a9ded4e0edff7d479l_zh_CNs_d_m/book/detail/detail/img/pic1.png" alt="" class="img-thumbnail tb-colorImg cuM7nay" __cid="cuM7nay"/>  
+            <div class="tb-title cuM7nay" __cid="cuM7nay"> 
+              <span class="text-danger h4 cuM7nay" __cid="cuM7nay">书店时光：世界最美书店巡礼</span>  
+              <span class="text-danger h4 cuM7nay" __cid="cuM7nay" data-bind="text:goodsData.ref('fPrice')"/>  
+              <div xid="div7" __cid="cuM7nay" class="cuM7nay"/>  
+              <span xid="span47" __cid="cuM7nay" class="cuM7nay">作者：清水玲奈</span>  
+              <h5 xid="h52" class="text-black cuM7nay" __cid="cuM7nay">请选择</h5> 
+            </div>  
+            <div class="panel-body cuM7nay" __cid="cuM7nay"> 
+              <h4 class="text-black cuM7nay" __cid="cuM7nay">图书馆</h4>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-colorList cuM7nay" xid="colorList" dataItemAlias="colorRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'colorLiClick')}" data-config="{&quot;data&quot;:&quot;colorData&quot;}" __cid="cuM7nay"> 
+                <ul class="x-list-template hide cuM7nay" xid="ul2" componentname="ul(html)" id="undefined_ul2" __cid="cuM7nay" data-bind="foreach:{data:$model.foreach_colorList($element),afterRender:$model.foreach_afterRender_colorList.bind($model,$element),as:'colorRow'}"> 
+                  <li xid="li2" class="col col-xs-6 cuM7nay" componentname="li(html)" id="undefined_li2" __cid="cuM7nay"> 
+                    <div class="text-center cuM7nay" __cid="cuM7nay" data-bind="css:{'current':colorRow.val('fState')==1}"> 
+                      <span __cid="cuM7nay" class="cuM7nay" data-bind="text:ref('fColor')"/> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>  
+              <div class="clearfix cuM7nay" __cid="cuM7nay"/> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified tb-shopping cuM7nay" xid="buttonGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'},visible:$model.stateData.val(&quot;state&quot;)==1" data-config="{&quot;tabbed&quot;:true}" __cid="cuM7nay"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuM7nay" style="margin-bottom:20px;border-color:white;background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cuM7nay"> 
+                <i xid="i16" __cid="cuM7nay" class="cuM7nay"/>  
+                <span xid="span34" __cid="cuM7nay" class="cuM7nay">确定</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuM7nay" style="margin-bottom:20px;border-color:white;background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cuM7nay"> 
+                <i xid="i19" __cid="cuM7nay" class="cuM7nay"/>  
+                <span xid="span37" __cid="cuM7nay" class="cuM7nay">返回</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card tb-trans x-has-iosstatu p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuM7nay"> 
+          <div class="x-panel-top cuM7nay" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuM7nay"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar tb-box cuM7nay" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cuM7nay"> 
+              <div class="x-titlebar-left cuM7nay" xid="left1" __cid="cuM7nay"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon tb-backBtn cuM7nay" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cuM7nay"> 
+                  <i xid="i6" class="icon-chevron-left cuM7nay" __cid="cuM7nay"/>  
+                  <span xid="span6" __cid="cuM7nay" class="cuM7nay">关闭</span> 
+                </a> 
+              </div>  
+              <div class="x-titlebar-title cuM7nay" xid="title1" __cid="cuM7nay"/>  
+              <div class="x-titlebar-right  cuM7nay" xid="right1" __cid="cuM7nay"> 
+                <div class="empty cuM7nay" __cid="cuM7nay"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-panel-content x-cards tb-trans cuM7nay" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuM7nay"> 
+            <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel cuM7nay" xid="carousel1" style="height:251px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" data-config="{&quot;auto&quot;:false}" __cid="cuM7nay"> 
+              <ol class="carousel-indicators cuM7nay" xid="default1" __cid="cuM7nay"/>  
+              <div class="x-contents carousel-inner cuM7nay" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cuM7nay"> 
+                <div class="x-contents-content active cuM7nay" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cuM7nay"> 
+                  <img src="" alt="" xid="image1" class="image-wall tb-img cuM7nay" __cid="cuM7nay"/> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card panel-body pe453732bb0a34875b652cfea547137d1-iosstatusbar cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuM7nay"> 
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row tb-nopadding cuM7nay" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuM7nay"> 
+                <div class="col col-xs-10  tb-nopadding cuM7nay" xid="col8" __cid="cuM7nay"> 
+                  <h4 xid="h41" class=" text-black cuM7nay" __cid="cuM7nay" data-bind="text:goodsData.ref('fTitle')"/>  
+                  <div xid="div4" __cid="cuM7nay" class="cuM7nay"> 
+                    <span xid="span29" class="text-danger h3 cuM7nay" __cid="cuM7nay" data-bind="text:goodsData.ref('fPrice')"/> 
+                  </div>  
+                  <div xid="div5" class="text-muted cuM7nay" __cid="cuM7nay"> 
+                    <span xid="span13" class="tb-text-del cuM7nay" __cid="cuM7nay" data-bind="text:goodsData.ref('fOldPrice')"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-2  tb-nopadding cuM7nay" xid="col9" __cid="cuM7nay"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row text-muted h5 tb-nopadding cuM7nay" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuM7nay"> 
+                <div class="col col-xs-4  tb-nopadding cuM7nay" xid="col11" __cid="cuM7nay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cuM7nay" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-checkmark-circled&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cuM7nay"> 
+                    <i xid="i3" class="icon-checkmark-circled cuM7nay" __cid="cuM7nay"/>  
+                    <span xid="span3" __cid="cuM7nay" class="cuM7nay"/> 
+                  </a>  
+                  <span xid="span14" __cid="cuM7nay" class="cuM7nay">状态</span>  
+                  <span xid="span15" __cid="cuM7nay" class="cuM7nay" data-bind="text:goodsData.ref('fPostage')"/> 
+                </div>  
+                <div class="col col-xs-4 text-center cuM7nay" xid="col12" __cid="cuM7nay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cuM7nay" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-plus-round&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cuM7nay"> 
+                    <i xid="i2" class="icon-plus-round cuM7nay" __cid="cuM7nay"/>  
+                    <span xid="span2" __cid="cuM7nay" class="cuM7nay"/> 
+                  </a>  
+                  <span xid="span24" __cid="cuM7nay" class="cuM7nay">借阅</span>  
+                  <span xid="span26" __cid="cuM7nay" class="cuM7nay" data-bind="text:goodsData.ref('fRecord')"/>  
+                  <span xid="span27" __cid="cuM7nay" class="cuM7nay">次</span> 
+                </div>  
+                <div class="col col-xs-4 text-center cuM7nay" xid="col13" __cid="cuM7nay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cuM7nay" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:clickOpenPoint" data-config="{&quot;icon&quot;:&quot;icon-android-location&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cuM7nay"> 
+                    <i xid="i1" class="icon-android-location cuM7nay" __cid="cuM7nay"/>  
+                    <span xid="span1" __cid="cuM7nay" class="cuM7nay"/> 
+                  </a>  
+                  <span xid="span16" __cid="cuM7nay" class="cuM7nay" data-bind="text:goodsData.ref('fAddress')"/> 
+                </div> 
+              </div>  
+              <style __cid="cuM7nay" class="cuM7nay">.x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe453732bb0a34875b652cfea547137d1-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-heading x-card p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'},event:{click:$model._callModelFn.bind($model, 'popOverClick')}" __cid="cuM7nay"> 
+              <i xid="i4" class="text-muted icon-chevron-right pull-right btn-sm cuM7nay" __cid="cuM7nay"/>  
+              <span xid="span20" __cid="cuM7nay" class="cuM7nay">选择图书馆</span>  
+              <style __cid="cuM7nay" class="cuM7nay">.x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1f0ca37c67f742d68136b1fca21ae06f-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card p8bab0564eea341cb99621d58ebe467a2-iosstatusbar cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuM7nay"> 
+              <div class="panel-body cuM7nay" __cid="cuM7nay"> 
+                <div class="h5 text-black cuM7nay" __cid="cuM7nay"> 
+                  <span xid="span22" __cid="cuM7nay" class="cuM7nay">读者评价（</span>  
+                  <span xid="span25" __cid="cuM7nay" class="cuM7nay" data-bind="text:goodsData.ref('fCommentsNumber')"/>  
+                  <span xid="span28" __cid="cuM7nay" class="cuM7nay">）</span> 
+                </div>  
+                <div class="media-left cuM7nay" __cid="cuM7nay"> 
+                  <img src="" alt="" xid="image3" class="img-circle cuM7nay" height="40px" style="width:40px;" __cid="cuM7nay" data-bind="attr:{src:commentsData.ref('fUserImg')}"/> 
+                </div>  
+                <div class="media-body cuM7nay" __cid="cuM7nay"> 
+                  <span xid="span30" __cid="cuM7nay" class="cuM7nay" data-bind="text:commentsData.ref('fUserName')"/> 
+                </div>  
+                <div __cid="cuM7nay" class="cuM7nay"> 
+                  <span xid="span32" __cid="cuM7nay" class="cuM7nay" data-bind="text:commentsData.ref('fContent')"/> 
+                </div>  
+                <div class="text-muted cuM7nay" __cid="cuM7nay"> 
+                  <span xid="span36" __cid="cuM7nay" class="cuM7nay" data-bind="text:commentsData.ref('fDate')"/> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cuM7nay" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cuM7nay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label text-black cuM7nay" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;查看更多评论&quot;}" __cid="cuM7nay"> 
+                    <i xid="i11" __cid="cuM7nay" class="cuM7nay"/>  
+                    <span xid="span5" __cid="cuM7nay" class="cuM7nay">查看更多评论</span> 
+                  </a> 
+                </div> 
+              </div>  
+              <style __cid="cuM7nay" class="cuM7nay">.x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p8bab0564eea341cb99621d58ebe467a2-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card p1d1725cb7973464790ab2769ca8784dc-iosstatusbar cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuM7nay"> 
+              <style __cid="cuM7nay" class="cuM7nay">.x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1d1725cb7973464790ab2769ca8784dc-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel x-card p039ab80391af49f99a2cbd4b902015b2-iosstatusbar cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuM7nay"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified tb-tabs cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cuM7nay"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label active cuM7nay" xid="detailsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;图文详情&quot;,&quot;target&quot;:&quot;detailsContent&quot;}" __cid="cuM7nay"> 
+                  <i xid="i14" __cid="cuM7nay" class="cuM7nay"/>  
+                  <span xid="span31" __cid="cuM7nay" class="cuM7nay">图文详情</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuM7nay" xid="parameterBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;产品参数&quot;,&quot;target&quot;:&quot;parameterContent&quot;}" __cid="cuM7nay"> 
+                  <i xid="i15" __cid="cuM7nay" class="cuM7nay"/>  
+                  <span xid="span33" __cid="cuM7nay" class="cuM7nay">产品参数</span> 
+                </a> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cuM7nay" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cuM7nay"> 
+                <div class="x-contents-content panel-body active cuM7nay" xid="detailsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cuM7nay"> 
+                  <div __cid="cuM7nay" class="cuM7nay" data-bind="html:$model.goodsData.val(&quot;fDetail&quot;)"/> 
+                </div>  
+                <div class="x-contents-content panel-body cuM7nay" xid="parameterContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cuM7nay"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards cuM7nay" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;parameterData&quot;}" __cid="cuM7nay"> 
+                    <ul class="x-list-template hide cuM7nay" xid="ul1" componentname="ul(html)" id="undefined_ul1" __cid="cuM7nay" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                      <li xid="li1" componentname="li(html)" id="undefined_li1" class="list-group-item cuM7nay" __cid="cuM7nay"> 
+                        <span class="col col-xs-4 tb-nopadding text-muted cuM7nay" __cid="cuM7nay" data-bind="text:ref('fName')"/>  
+                        <span class="x-flex col col-xs-8 tb-nopadding cuM7nay" __cid="cuM7nay" data-bind="text:ref('fParameter')"/>  
+                        <div class="clearfix cuM7nay" __cid="cuM7nay"/> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div> 
+              </div>  
+              <style __cid="cuM7nay" class="cuM7nay">.x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p039ab80391af49f99a2cbd4b902015b2-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div> 
+          </div>  
+          <div class="x-panel-bottom cuM7nay" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuM7nay"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row cuM7nay" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuM7nay"> 
+              <div class="col col-xs-5 tb-nopadding cuM7nay" xid="col3" __cid="cuM7nay"/>  
+              <div class="col col-xs-7 tb-nopadding cuM7nay" xid="col6" __cid="cuM7nay"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified tb-shopping cuM7nay" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cuM7nay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuM7nay" xid="joinCartBtn" style="margin-bottom:20px;border-color:white;background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:joinCartBtnClick" data-config="{&quot;icon&quot;:&quot;icon-radio-waves&quot;,&quot;label&quot;:&quot;立即预约&quot;}" __cid="cuM7nay"> 
+                    <i xid="i8" class="icon-radio-waves icon cuM7nay" __cid="cuM7nay"/>  
+                    <span xid="span7" __cid="cuM7nay" class="cuM7nay">立即预约</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuM7nay" xid="buyBtn" style="margin-bottom:20px;border-color:white;background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:buyBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-display&quot;,&quot;label&quot;:&quot;加入收藏&quot;}" __cid="cuM7nay"> 
+                    <i xid="i7" class="icon-android-display icon cuM7nay" __cid="cuM7nay"/>  
+                    <span xid="span8" __cid="cuM7nay" class="cuM7nay">加入收藏</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <style __cid="cuM7nay" class="cuM7nay">.x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2d58f6f48d5d4c5d9c7de6e85b3a6e64-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+        </div> 
+      </div>
+    </div>  
+    <div id="downloadGCF" style="display:none;padding:50px;"> 
+      <span>您使用的浏览器需要下载插件才能使用,</span>  
+      <a id="downloadGCFLink" href="#">下载地址</a>  
+      <p>(安装后请重新打开浏览器)</p> 
+    </div>  
+    <script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() &amp;&amp; (browser.getVersion() &lt; 10) &amp;&amp; !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>  
+    <script id="_metaJS" src="../../../v_525b3bd129874032afd24e3ce157901al_zh_CNs_d_m/system/config/meta.js"> </script>  
+    <script id="_requireJS" src="../../../v_e165abf3e3af453385da12954dc98a9el_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>  
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_515a4f0b11ae4274a9292bb4b5e930ffl_zh_CNs_d_m/system/core.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_e719e2f00d284efd9e8e923515a6306el_zh_CNs_d_m/system/common.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_81a1934ba66b41b7acd97bf9bfd50737l_zh_CNs_d_m/system/components/comp.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_f99cfa7320e24c0ab49bf235c018433al_zh_CNs_d_m/system/components/comp2.min.js"></script>
+    <script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &amp;&amp;
+                                    !(node.attachEvent.toString &amp;&amp; node.attachEvent.toString().indexOf('[native code') &lt; 0) &amp;&amp;
+                                    !(typeof opera !== 'undefined' &amp;&amp; opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10.js";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&amp;&amp; (items[items.length-1].indexOf("l_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("s_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls &amp;&amp; urls.length&gt;0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i&lt;urls.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("&lt;script  src='" + url + "'/&gt;");
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles &amp;&amp; styles.length&gt;0){
+            				for (var i=0; i&lt;styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("&lt;link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/&gt;");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i&lt;items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] &amp;&amp; (items[i].indexOf("v_")===0)
+            								&amp;&amp; (items[i].indexOf("l_")!==-1)
+            								&amp;&amp; (items[i].indexOf("s_")!==-1)
+            								&amp;&amp; (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i&lt;loadeds.length; i++){
+    							if (loadeds[i] &amp;&amp; (loadeds[i].indexOf(newUrl)!==-1)){
+    								return true;
+    							}
+    						}
+            			}
+    					return false;
+            		},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i&lt;scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_b78038babb5e4371bbbee1d62c62dd6al_zh_CNs_d_m/book/detail',
+    			    paths: {
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_b78038babb5e4371bbbee1d62c62dd6al_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_b78038babb5e4371bbbee1d62c62dd6al_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_b78038babb5e4371bbbee1d62c62dd6al_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_b78038babb5e4371bbbee1d62c62dd6al_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator &amp;&amp; navigator.splashscreen &amp;&amp; navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+						setTimeout(function(){
+							versionChecker.check();			
+						},1000);
+    	            }, false);
+    				var context = {};
+    				context.model = '$model/UI2/book/detail/detail.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow &amp;&amp; window.parent &amp;&amp; window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid &amp;&amp; pwindow 
+    						&amp;&amp; pwindow.__justep &amp;&amp; pwindow.__justep.windowOpeners
+    						&amp;&amp; pwindow.__justep.windowOpeners[ownerid]
+    						&amp;&amp; $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					$(window).unload(function(event){
+    						if(winOpener &amp;&amp; winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script> 
+  </body> 
+</html>

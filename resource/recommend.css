@@ -1,0 +1,14 @@
+/*删除线*/
+.tb-text-del{
+	text-decoration: line-through;
+}
+.xxa{
+	background-color: #51c5d4;
+	color:white;
+	border-color: white;
+}
+.xxa:hover {
+	background-color: white;
+	color: #51c5d4;
+	border-color: #51c5d4;
+}

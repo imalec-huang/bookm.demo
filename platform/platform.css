@@ -1,0 +1,17 @@
+.xxx{
+	background-color: #51c5d4;
+	color:white;
+	border-color: white;
+}
+.xxx:HOVER {
+	background-color: white;
+	color: #51c5d4;
+	border-color: #51c5d4
+}
+p{
+	padding:10px 15px;
+	margin-bottom:0px;
+}
+.x-attachment-content{
+	border:0;
+}

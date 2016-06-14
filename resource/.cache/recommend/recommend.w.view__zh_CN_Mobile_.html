@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c2aaEFf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c2aaEFf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.tb-text-del.c2aaEFf{text-decoration: line-through} .xxa.c2aaEFf{background-color: rgb(81, 197, 212); color: white; border-color: white} .xxa.c2aaEFf:hover{background-color: white; color: rgb(81, 197, 212); border-color: rgb(81, 197, 212)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c2aaEFf" class="c2aaEFf"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p762e95a4458e435da2003f3119b7f879-iosstatusbar c2aaEFf" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c2aaEFf"> 
+    <div class="x-panel-top c2aaEFf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:100}" __cid="c2aaEFf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c2aaEFf" xid="titleBar1" style="background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;图书推荐&quot;}" __cid="c2aaEFf"> 
+        <div class="x-titlebar-left c2aaEFf" xid="left1" __cid="c2aaEFf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c2aaEFf" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c2aaEFf"> 
+            <i xid="i3" class="icon-chevron-left c2aaEFf" __cid="c2aaEFf"/>  
+            <span xid="span1" __cid="c2aaEFf" class="c2aaEFf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c2aaEFf" xid="title1" __cid="c2aaEFf">图书推荐</div>  
+        <div class="x-titlebar-right  c2aaEFf" xid="right1" __cid="c2aaEFf"> 
+          <div class="empty c2aaEFf" __cid="c2aaEFf"/> 
+        </div> 
+      </div>  
+      <div xid="div4" __cid="c2aaEFf" class="c2aaEFf"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c2aaEFf" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2aaEFf"> 
+          <div xid="col2" class="x-col  c2aaEFf" __cid="c2aaEFf"/>  
+          <div class="x-col x-col-90 pull-right c2aaEFf" xid="col1" __cid="c2aaEFf"> 
+            <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified c2aaEFf" xid="buttonGroup3" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="c2aaEFf"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default xxa c2aaEFf" xid="addBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;新书推荐&quot;,&quot;target&quot;:&quot;bookshelvesContent&quot;}" __cid="c2aaEFf"> 
+                <i xid="i8" __cid="c2aaEFf" class="c2aaEFf"/>  
+                <span xid="span11" __cid="c2aaEFf" class="c2aaEFf">新书推荐</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default xxa c2aaEFf" xid="collectionBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;热门排行&quot;,&quot;target&quot;:&quot;content3&quot;}" __cid="c2aaEFf"> 
+                <i xid="i10" __cid="c2aaEFf" class="c2aaEFf"/>  
+                <span xid="span12" __cid="c2aaEFf" class="c2aaEFf">热门排行</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="x-col c2aaEFf" xid="col3" __cid="c2aaEFf"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view c2aaEFf" xid="content1" _xid="C6F5A9AD87B000014B2C1F702F301BBF" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2aaEFf"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c2aaEFf" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;swipe&quot;:false}" __cid="c2aaEFf"> 
+        <div class="x-contents-content active c2aaEFf" xid="bookshelvesContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c2aaEFf"> 
+          <div class="x-scroll c2aaEFf" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="c2aaEFf"> 
+            <div class="x-content-center x-pull-down container c2aaEFf" xid="div1" __cid="c2aaEFf"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down c2aaEFf" xid="i5" __cid="c2aaEFf"/>  
+              <span class="x-pull-down-label c2aaEFf" xid="span5" __cid="c2aaEFf">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content c2aaEFf" xid="div2" __cid="c2aaEFf"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list c2aaEFf" xid="bookList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;booksData&quot;,&quot;disablePullToRefresh&quot;:false,&quot;filter&quot;:&quot; $row.val(\&quot;fGroupID\&quot;) == 'f00105412'&quot;}" __cid="c2aaEFf"> 
+                <ul class="x-list-template list-group hide c2aaEFf" xid="listTemplateUl1" __cid="c2aaEFf" data-bind="foreach:{data:$model.foreach_bookList($element),afterRender:$model.foreach_afterRender_bookList.bind($model,$element)}"> 
+                  <li xid="li1" class="list-group-item c2aaEFf" __cid="c2aaEFf"> 
+                    <div xid="div25" class="media c2aaEFf" __cid="c2aaEFf"> 
+                      <div xid="div5" class="media-left c2aaEFf" __cid="c2aaEFf"> 
+                        <img alt="" xid="image" class="img-rounded media-object c2aaEFf" dir="rtl" style="height:80px;width:70px;" __cid="c2aaEFf" data-bind="attr:{src:val(&quot;fImg&quot;)}"/> 
+                      </div>  
+                      <div xid="div6" class="media-body c2aaEFf" __cid="c2aaEFf"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output c2aaEFf" xid="output1" data-bind="component:{ref:ref(&quot;fName&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c2aaEFf"/>  
+                        <div class="text-muted c2aaEFf" xid="div15" __cid="c2aaEFf"> 
+                          <span xid="span11" class="text-primary c2aaEFf" __cid="c2aaEFf">ISBN</span>  
+                          <span xid="span9" class="text-primary c2aaEFf" __cid="c2aaEFf" data-bind="text:ref(&quot;fIsbn&quot;)"/> 
+                        </div>  
+                        <div class="text-muted c2aaEFf" xid="div16" __cid="c2aaEFf"> 
+                          <span xid="span30" __cid="c2aaEFf" class="c2aaEFf">借阅</span>  
+                          <span xid="span21" __cid="c2aaEFf" class="c2aaEFf" data-bind="text:ref(&quot;fTotal&quot;)"/>  
+                          <span xid="span22" __cid="c2aaEFf" class="c2aaEFf">次</span>  
+                          <span xid="span20" __cid="c2aaEFf" class="c2aaEFf" data-bind="text:ref('fPostage')"/> 
+                        </div> 
+                      </div>  
+                      <div xid="nextDiv" class="media-right c2aaEFf" __cid="c2aaEFf"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c2aaEFf" xid="nextBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:listToDetail" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;,&quot;target&quot;:&quot;content3&quot;}" __cid="c2aaEFf"> 
+                          <i xid="i9" class="icon-chevron-right c2aaEFf" style="color:#C0C0C0;" __cid="c2aaEFf"/>  
+                          <span xid="span14" __cid="c2aaEFf" class="c2aaEFf"/> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up c2aaEFf" xid="div3" __cid="c2aaEFf"> 
+              <span class="x-pull-up-label c2aaEFf" xid="span6" __cid="c2aaEFf">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content  x-scroll-view c2aaEFf" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c2aaEFf"> 
+          <div class="x-scroll c2aaEFf" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="c2aaEFf"> 
+            <div class="x-content-center x-pull-down container c2aaEFf" xid="div18" __cid="c2aaEFf"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down c2aaEFf" xid="i1" __cid="c2aaEFf"/>  
+              <span class="x-pull-down-label c2aaEFf" xid="span8" __cid="c2aaEFf">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content c2aaEFf" xid="div17" __cid="c2aaEFf"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list c2aaEFf" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;booksData&quot;,&quot;disablePullToRefresh&quot;:false,&quot;filter&quot;:&quot; $row.val(\&quot;fGroupID\&quot;) == 'f00105411'&quot;}" __cid="c2aaEFf"> 
+                <ul class="x-list-template list-group hide c2aaEFf" xid="listTemplateUl2" __cid="c2aaEFf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li xid="li2" class="list-group-item c2aaEFf" __cid="c2aaEFf"> 
+                    <div xid="media1" class="media c2aaEFf" __cid="c2aaEFf"> 
+                      <div xid="mediaLeft1" class="media-left c2aaEFf" __cid="c2aaEFf"> 
+                        <img alt="" xid="image1" class="img-rounded media-object c2aaEFf" dir="rtl" style="height:80px;width:70px;" __cid="c2aaEFf" data-bind="attr:{src:val(&quot;fImg&quot;)}"/> 
+                      </div>  
+                      <div xid="mediaBody1" class="media-body c2aaEFf" __cid="c2aaEFf"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output c2aaEFf" xid="output4" data-bind="component:{ref:ref(&quot;fName&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c2aaEFf"/>  
+                        <div class="text-muted c2aaEFf" xid="div13" __cid="c2aaEFf"> 
+                          <span xid="span17" class="text-primary c2aaEFf" __cid="c2aaEFf">ISBN</span>  
+                          <span xid="span13" class="text-primary c2aaEFf" __cid="c2aaEFf" data-bind="text:ref(&quot;fIsbn&quot;)"/> 
+                        </div>  
+                        <div class="text-muted c2aaEFf" xid="div12" __cid="c2aaEFf"> 
+                          <span xid="span15" __cid="c2aaEFf" class="c2aaEFf">借阅</span>  
+                          <span xid="span3" __cid="c2aaEFf" class="c2aaEFf" data-bind="text:ref(&quot;fTotal&quot;)"/>  
+                          <span xid="span7" __cid="c2aaEFf" class="c2aaEFf">次</span>  
+                          <span xid="span4" __cid="c2aaEFf" class="c2aaEFf" data-bind="text:ref('fPostage')"/> 
+                        </div> 
+                      </div>  
+                      <div xid="mediaRight1" class="media-right c2aaEFf" __cid="c2aaEFf"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c2aaEFf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:listToDetail" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;,&quot;target&quot;:&quot;content3&quot;}" __cid="c2aaEFf"> 
+                          <i xid="i2" class="icon-chevron-right c2aaEFf" style="color:#C0C0C0;" __cid="c2aaEFf"/>  
+                          <span xid="span16" __cid="c2aaEFf" class="c2aaEFf"/> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up c2aaEFf" xid="div14" __cid="c2aaEFf"> 
+              <span class="x-pull-up-label c2aaEFf" xid="span10" __cid="c2aaEFf">加载更多...</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c2aaEFf" class="c2aaEFf">.x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-top {height: 100px;}.x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-content { top: 100px;bottom: nullpx;}.x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-top {height: 120px;}.iosstatusbar .x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-content { top: 120px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-top {height: 100px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p762e95a4458e435da2003f3119b7f879-iosstatusbar &gt;.x-panel-content {top: 100px;}</style> 
+  </div> 
+</div>

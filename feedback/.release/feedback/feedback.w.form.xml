@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cj6rqym" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cj6rqym" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.title.cj6rqym{margin-top: 10px; padding: 0.4em 0.6em} .sTitle.cj6rqym{border-top: 1px solid rgb(124, 124, 124); padding: 5px} a.list-group-item.cj6rqym:hover, a.list-group-item.cj6rqym:focus{background-color: rgb(255, 248, 220)} .list-group-item.cj6rqym{border: 0} .list-group.cj6rqym{-webkit-box-shadow: 0px 0px rgba(0, 0, 0, 0.075); box-shadow: 0px 0px rgba(0, 0, 0, 0.075)} .xxx.cj6rqym, .xxa.cj6rqym{background-color: rgb(81, 197, 212); color: white; border-color: white} .xxa.cj6rqym:HOVER{background-color: white; color: rgb(81, 197, 212); border-color: rgb(81, 197, 212)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cj6rqym" class="cj6rqym"></div>  
+  <img src="" alt="" xid="image1" class="img-responsive cj6rqym" bind-attr-src="$model.getImageUrl('./img/1.jpg')" __cid="cj6rqym"/>  
+  <div xid="div1" class="title cj6rqym" __cid="cj6rqym"> 
+    <p xid="p1" style="text-align:center;font-size:18px;line-height:25px;" __cid="cj6rqym" class="cj6rqym">【留言板】</p>  
+    <div xid="div2" class="sTitle cj6rqym" __cid="cj6rqym"> 
+      <p xid="p2" style="font-size:1em;text-align:center;line-height:20px;" __cid="cj6rqym" class="cj6rqym">谢谢你的关注，请留下你对我们的建议、想法、问题、反馈……</p>  
+      <p xid="p3" style="font-size:1em;text-align:center;line-height:20px;" __cid="cj6rqym" class="cj6rqym">任何你想对我们说的话，都可以随时告诉我们，我们一直在听着</p> 
+    </div> 
+  </div>  
+  <div xid="div7" class="list-group cj6rqym" __cid="cj6rqym"> 
+    <a xid="nickname" class="list-group-item cj6rqym" __cid="cj6rqym"> 
+      <p xid="p8" style="font-size:18px;" fid="nickname" __cid="cj6rqym" class="cj6rqym">昵称*</p>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control cj6rqym" xid="nicknameInput" fid="nickname" data-bind="component:{ref:$model.messageData.ref(&quot;nickname&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cj6rqym"/> 
+    </a>  
+    <a xid="wechat" class="list-group-item cj6rqym" __cid="cj6rqym"> 
+      <p xid="p5" style="font-size:18px;" fid="wechat" __cid="cj6rqym" class="cj6rqym">微信号</p>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control cj6rqym" xid="wechatInput" fid="wechat" data-bind="component:{ref:$model.messageData.ref(&quot;wechat&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cj6rqym"/> 
+    </a>  
+    <a xid="phone" class="list-group-item cj6rqym" __cid="cj6rqym"> 
+      <p xid="p6" style="font-size:18px;" fid="phone" __cid="cj6rqym" class="cj6rqym">手机</p>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control cj6rqym" xid="phoneInput" fid="phone" data-bind="component:{ref:$model.messageData.ref(&quot;phone&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cj6rqym"/> 
+    </a>  
+    <a xid="saying" class="list-group-item cj6rqym" __cid="cj6rqym"> 
+      <p xid="p7" style="font-size:18px;" fid="saying" __cid="cj6rqym" class="cj6rqym">你想说得话：*</p>  
+      <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control rows=&quot;5&quot; cj6rqym" xid="sayingTextarea" fid="saying" style="height:100px;" data-bind="component:{ref:$model.messageData.ref(&quot;wantToSay&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cj6rqym"/> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cj6rqym" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cj6rqym"> 
+    <div class="x-col cj6rqym" xid="col1" __cid="cj6rqym"/>  
+    <div class="x-col cj6rqym" xid="col2" __cid="cj6rqym"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-block xxa cj6rqym" xid="submitBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cj6rqym"> 
+        <i xid="i1" __cid="cj6rqym" class="cj6rqym"/>  
+        <span xid="span1" __cid="cj6rqym" class="cj6rqym">提交</span> 
+      </a> 
+    </div>  
+    <div class="x-col cj6rqym" xid="col3" __cid="cj6rqym"/> 
+  </div> 
+</div>

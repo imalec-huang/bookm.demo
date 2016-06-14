@@ -1,0 +1,14 @@
+[
+{"fID":"s000","fRootID":"-1","fClassName":"首页","pageName":"main"},
+{"fID":"s001","fRootID":"r001","fClassName":"概况","pageName":"roughly"},
+{"fID":"s002","fRootID":"r001","fClassName":"公告","pageName":"intro"},
+{"fID":"s003","fRootID":"r001","fClassName":"全景漫游","pageName":"mapd"},
+{"fID":"s004","fRootID":"r002","fClassName":"我的收藏","pageName":"collect"},
+{"fID":"s005","fRootID":"r002","fClassName":"借阅记录","pageName":"record"},
+{"fID":"s006","fRootID":"r002","fClassName":"消息中心","pageName":"message"},
+{"fID":"s005","fRootID":"r003","fClassName":"资源检索","pageName":"search"},
+{"fID":"s006","fRootID":"r003","fClassName":"图书推荐","pageName":"recommend"},
+{"fID":"s007","fRootID":"r003","fClassName":"数据库","pageName":"database"},
+{"fID":"s008","fRootID":"r005","fClassName":"社交平台","pageName":"platform"},
+{"fID":"s009","fRootID":"r006","fClassName":"联系我们","pageName":"feedback"}
+]

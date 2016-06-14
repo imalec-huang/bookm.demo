@@ -1,0 +1,30 @@
+.title{
+	margin-top:10px;
+	padding:0.4em 0.6em;
+	
+}
+.sTitle{
+	border-top:1px solid #7C7C7C;
+	padding:5px;
+}
+a.list-group-item:hover, a.list-group-item:focus {
+ background-color: #FFF8DC;
+}
+ 
+.list-group-item {
+ border: 0;
+}
+.list-group {
+ -webkit-box-shadow: 0px 0px rgba(0,0,0,0.075);
+    box-shadow: 0px 0px rgba(0,0,0,0.075);
+}
+.xxx,.xxa{
+	background-color: #51c5d4;
+	color:white;
+	border-color: white;
+}
+.xxa:HOVER {
+	background-color: white;
+	color: #51c5d4;
+	border-color: #51c5d4;
+}

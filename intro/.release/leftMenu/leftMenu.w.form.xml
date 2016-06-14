@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cziqYNf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cziqYNf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/fragment/list/listRow4,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cziqYNf" class="cziqYNf"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pf8da622cea4748988c91810564c17594-iosstatusbar cziqYNf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cziqYNf"> 
+    <div class="x-panel-top cziqYNf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cziqYNf">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cziqYNf" xid="titleBar1" style="background-color:black;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;菜单&quot;}" __cid="cziqYNf"> 
+        <div class="x-titlebar-left cziqYNf" xid="left1" __cid="cziqYNf"/>  
+        <div class="x-titlebar-title cziqYNf" xid="title1" __cid="cziqYNf">菜单</div>  
+        <div class="x-titlebar-right  cziqYNf" xid="right1" __cid="cziqYNf">
+          <div class="empty cziqYNf" __cid="cziqYNf"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cziqYNf" xid="content1" _xid="C7049F348E700001DC82134A15BA63C0" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cziqYNf">
+      <div component="$model/UI2/system/components/fragment/list/listRow4" xid="listRow41" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listRow4'}" __cid="cziqYNf" class="cziqYNf"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cziqYNf" style="margin: 5px;" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="cziqYNf"> 
+          <ul class="x-list-template hide cziqYNf" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="cziqYNf"> 
+            <li class="list-row-bottom cziqYNf" xid="li3" __cid="cziqYNf"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cziqYNf" xid="row1" bind-click="openPageClick" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cziqYNf"> 
+                <div xid="col1" __cid="cziqYNf" class="cziqYNf"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cziqYNf" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-right-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cziqYNf"> 
+                    <i xid="i4" class="icon-arrow-right-a cziqYNf" __cid="cziqYNf"/>  
+                    <span xid="span9" __cid="cziqYNf" class="cziqYNf"/>
+                  </a>
+                </div>  
+                <div class="x-col cziqYNf" xid="col2" __cid="cziqYNf"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cziqYNf" xid="output3" bind-value=" val(&quot;pageName&quot;)" data-bind="component:{ref:ref(&quot;mname&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cziqYNf"/>
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cziqYNf" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cziqYNf"/>
+    <style __cid="cziqYNf" class="cziqYNf">.x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf8da622cea4748988c91810564c17594-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

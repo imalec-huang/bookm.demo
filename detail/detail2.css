@@ -1,0 +1,20 @@
+.xxx,.xxa {
+	background-color: #51c5d4;
+	color: white;
+	border-color: white;
+}
+
+.xxa:HOVER {
+	background-color: white;
+	color: #51c5d4;
+	border-color: #51c5d4;
+}
+
+.tb-tabs.cuM7nay .btn.active.cuM7nay {
+	color: #51c5d4;
+	border-bottom-color: #51c5d4;
+}
+
+.table th,.table td {
+	text-align: center;
+}

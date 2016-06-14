@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfaQrqm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfaQrqm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-list-padding.cfaQrqm{padding-left: 30px; padding-right: 15px} .x-panel-content.cfaQrqm:before{content: ""; position: absolute; top: 30px; left: 30px; height: 100%; width: 1px; background: rgb(232, 232, 232)} .timeline-block.cfaQrqm{position: relative; margin-top: 35px} .timeline-image.cfaQrqm{position: absolute; height: 30px; width: 30px; top: -15px; left: -15px; border-radius: 50%; z-index: 100} .timeline-content.cfaQrqm{position: relative; border: 1px solid rgb(232, 232, 232); border-left: 0; padding-left: 15px; padding-right: 10px} h5.cfaQrqm{margin-bottom: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cfaQrqm" class="cfaQrqm"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p62bd8dc50fb44177aff27c4276223061-iosstatusbar cfaQrqm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfaQrqm"> 
+    <div class="x-panel-top cfaQrqm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfaQrqm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfaQrqm" xid="titleBar1" style="background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cfaQrqm"> 
+        <div class="x-titlebar-left cfaQrqm" xid="left1" __cid="cfaQrqm"/>  
+        <div class="x-titlebar-title cfaQrqm" xid="title1" __cid="cfaQrqm"> 
+          <span xid="span10" __cid="cfaQrqm" class="cfaQrqm">消息中心</span>
+        </div>  
+        <div class="x-titlebar-right  cfaQrqm" xid="right1" __cid="cfaQrqm">
+          <div class="empty cfaQrqm" __cid="cfaQrqm"/>
+          <i xid="i6" __cid="cfaQrqm" class="cfaQrqm"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cfaQrqm" xid="menuBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-compose&quot;,&quot;label&quot;:&quot;目录&quot;}" __cid="cfaQrqm"> 
+            <i xid="i7" class="icon-compose cfaQrqm" __cid="cfaQrqm"/>  
+            <span xid="span9" __cid="cfaQrqm" class="cfaQrqm">目录</span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cfaQrqm" xid="content1" _xid="C6F856832D700001E13B1CFF16D0C110" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfaQrqm"> 
+      <div class="x-scroll cfaQrqm" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfaQrqm"> 
+        <div class="x-content-center x-pull-down container cfaQrqm" xid="div3" __cid="cfaQrqm"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cfaQrqm" xid="i1" __cid="cfaQrqm"/>  
+          <span class="x-pull-down-label cfaQrqm" xid="span1" __cid="cfaQrqm">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cfaQrqm" xid="div5" __cid="cfaQrqm"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list x-list-padding cfaQrqm" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;commentData&quot;}" __cid="cfaQrqm"> 
+            <ul class="x-list-template hide cfaQrqm" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cfaQrqm"> 
+              <li xid="li1" __cid="cfaQrqm" class="cfaQrqm"> 
+                <div xid="div2" class="timeline-block cfaQrqm" __cid="cfaQrqm"> 
+                  <img src="" alt="" xid="image1" bind-attr-src="$model.toURL(&quot;./img/&quot;+ $object.val(&quot;photo&quot;))" class="timeline-image img-circle cfaQrqm" __cid="cfaQrqm"/>  
+                  <div xid="div4" class="timeline-content cfaQrqm" __cid="cfaQrqm"> 
+                    <h5 xid="h51" bind-text="ref('name')" __cid="cfaQrqm" class="cfaQrqm"/>  
+                    <span class="badge pull-right cfaQrqm" xid="badge1" style="background-color:#2fa4e7;" bind-text=" val(&quot;useful&quot;)" __cid="cfaQrqm">未读</span>  
+                    <span xid="span14" style="font-size:xx-small;" bind-text="ref('time')" __cid="cfaQrqm" class="cfaQrqm"/>  
+                    <br xid="default2" __cid="cfaQrqm" class="cfaQrqm"/>  
+                    <span xid="span15" bind-text="ref('content')" __cid="cfaQrqm" class="cfaQrqm"/>
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cfaQrqm" xid="div6" __cid="cfaQrqm"> 
+          <span class="x-pull-up-label cfaQrqm" xid="span2" __cid="cfaQrqm">加载更多...</span>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cfaQrqm" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfaQrqm"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cfaQrqm" xid="buttonGroup1" style="height:100%;background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cfaQrqm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfaQrqm" xid="homeBtn" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:appPortal" data-config="{&quot;icon&quot;:&quot;icon-home&quot;,&quot;label&quot;:&quot;首页&quot;}" __cid="cfaQrqm"> 
+          <i xid="i22" class="icon-home cfaQrqm" __cid="cfaQrqm"/>  
+          <span xid="span23" __cid="cfaQrqm" class="cfaQrqm">首页</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfaQrqm" xid="cartBtn" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:appSearch" data-config="{&quot;icon&quot;:&quot;icon-ios7-cart&quot;,&quot;label&quot;:&quot;搜索&quot;}" __cid="cfaQrqm"> 
+          <i xid="i23" class="icon-ios7-cart cfaQrqm" __cid="cfaQrqm"/>  
+          <span xid="span24" __cid="cfaQrqm" class="cfaQrqm">搜索</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfaQrqm" xid="userBtn" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:appMessage" data-config="{&quot;icon&quot;:&quot;icon-android-social-user&quot;,&quot;label&quot;:&quot;消息中心&quot;}" __cid="cfaQrqm"> 
+          <i xid="i24" class="icon-android-social-user cfaQrqm" __cid="cfaQrqm"/>  
+          <span xid="span25" __cid="cfaQrqm" class="cfaQrqm">消息中心</span>
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cfaQrqm" class="cfaQrqm">.x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p62bd8dc50fb44177aff27c4276223061-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

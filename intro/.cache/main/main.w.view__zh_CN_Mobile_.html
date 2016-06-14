@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window x-scroll-view cV7nMZb" component="$model/UI2/system/components/justep/window/window" design="device:m;" style="width: 100%; height: 100%;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cV7nMZb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cV7nMZb" class="cV7nMZb"/>  
+  <div xmlns="" class="x-scroll cV7nMZb" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cV7nMZb"> 
+    <div class="x-content-center x-pull-down container cV7nMZb" xid="div1" __cid="cV7nMZb"> 
+      <i class="x-pull-down-img glyphicon x-icon-pull-down cV7nMZb" xid="i1" __cid="cV7nMZb"/>  
+      <span class="x-pull-down-label cV7nMZb" xid="span2" __cid="cV7nMZb">下拉刷新...</span> 
+    </div>  
+    <div class="x-scroll-content cV7nMZb" xid="div2" __cid="cV7nMZb"> 
+      <img src="" alt="" xid="image2" style="width:100%;" __cid="cV7nMZb" class="cV7nMZb" data-bind="attr:{src:$model.toUrl(&quot;./img/1.jpg&quot;)}"/>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cV7nMZb" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;【公告】&quot;}" __cid="cV7nMZb"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cV7nMZb" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;processData&quot;}" __cid="cV7nMZb"> 
+          <div class="x-control-group-title cV7nMZb" xid="controlGroupTitle1" __cid="cV7nMZb"> 
+            <span xid="span1" style="font-size:18px;" __cid="cV7nMZb" class="cV7nMZb">【公告】</span> 
+          </div>  
+          <ul class="x-list-template hide cV7nMZb" xid="listTemplateUl1" __cid="cV7nMZb" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <div xid="div3" __cid="cV7nMZb" class="cV7nMZb"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output cV7nMZb" xid="output5" data-bind="component:{ref:ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cV7nMZb"/> 
+            </div>  
+            <li xid="li1" __cid="cV7nMZb" class="cV7nMZb"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output cV7nMZb" xid="output1" style="font-size:12px;" data-bind="component:{ref:ref('pro'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cV7nMZb"/> 
+            </li>  
+            <li xid="li2" __cid="cV7nMZb" class="cV7nMZb"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cV7nMZb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV7nMZb"> 
+                <div class="x-col x-col-fixed x-col-offset-67 cV7nMZb" xid="col9" __cid="cV7nMZb"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cV7nMZb" xid="output2" data-bind="component:{ref:ref(&quot;name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cV7nMZb"/> 
+                </div>  
+                <div class="x-col x-col-20 cV7nMZb" xid="col10" __cid="cV7nMZb"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cV7nMZb" xid="output3" data-bind="component:{ref:ref(&quot;time&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cV7nMZb"/> 
+                </div> 
+              </div> 
+            </li>  
+            <hr xid="hr1" __cid="cV7nMZb" class="cV7nMZb"/> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-content-center x-pull-up cV7nMZb" xid="div4" __cid="cV7nMZb"> 
+      <span class="x-pull-up-label cV7nMZb" xid="span3" __cid="cV7nMZb">加载更多...</span> 
+    </div> 
+  </div> 
+</div>

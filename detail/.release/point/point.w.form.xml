@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cIjqAni" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIjqAni" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.xxx.cIjqAni, .xxa.cIjqAni{background-color: rgb(81, 197, 212); color: white; border-color: white} .xxa.cIjqAni:HOVER{background-color: white; color: rgb(81, 197, 212); border-color: rgb(81, 197, 212)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cIjqAni" class="cIjqAni"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pee55705f145f4c819d385858c7b3ef4f-iosstatusbar cIjqAni" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIjqAni"> 
+    <div class="x-panel-top cIjqAni" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIjqAni"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cIjqAni" style="background-color:black;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;图书导航&quot;}" __cid="cIjqAni"> 
+        <div class="x-titlebar-left xxx cIjqAni" __cid="cIjqAni"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cIjqAni" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cIjqAni"> 
+            <i class="icon-chevron-left cIjqAni" __cid="cIjqAni"/>  
+            <span __cid="cIjqAni" class="cIjqAni"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title xxx cIjqAni" __cid="cIjqAni">图书导航</div>  
+        <div class="x-titlebar-right  xxx cIjqAni" __cid="cIjqAni">
+          <div class="empty cIjqAni" __cid="cIjqAni"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cIjqAni" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIjqAni">
+      <img src="$model/UI2/book/detail/detail/img/1.jpg" alt="" xid="image1" height="100%" width="100%" __cid="cIjqAni" class="cIjqAni"/>
+    </div>  
+    <style __cid="cIjqAni" class="cIjqAni">.x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pee55705f145f4c819d385858c7b3ef4f-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

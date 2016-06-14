@@ -1,0 +1,10 @@
+.xxx{
+	background-color: #51c5d4;
+	color:white;
+	border-color: white;
+}
+.xxx:HOVER {
+	background-color: white;
+	color: #51c5d4;
+	border-color: #51c5d4
+}

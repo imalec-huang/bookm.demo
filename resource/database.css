@@ -1,0 +1,11 @@
+.tb-numberOperation span{ 
+	padding:4px 15px; 
+	border-top:1px solid #e1e1e1; 
+	border-bottom:1px solid #e1e1e1;
+}
+p{
+	margin:0;
+}
+.list-group{
+	margin-bottom:0;
+}

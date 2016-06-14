@@ -1,0 +1,6 @@
+[
+{"id":"1","fShopID":"f00101","fTitle":"期刊论文","fImg":"./main/img/1.jpg","fPrice":"http://www.baidu.com","fOldPrice":"美术特色资源数据库是浙江省高校数字图书馆特色资源库（二期）重点建设项目之一。图片与文字内容均由中国美术学院图书馆授权使用，是一个兼具学习、教学、研究 与欣赏为一体的美术专业数据库，制作时间近两年。","fNumber":"1","fSum":"0.00","furl":"http://www.baidu.com"},
+{"id":"2","fShopID":"f00102","fTitle":"艺术人生","fImg":"./main/img/2.jpg","fPrice":"http://210.33.124.16:8011","fOldPrice":"皮影数字博物馆以中国美术学院皮影艺术博物馆为依托，通过图文、影音和动画等形式展现作为物质文化遗产的皮影和作为非物质文化遗产的皮影戏。","fNumber":"1","fSum":"0.00","furl":"http://210.33.124.16:8011"},
+{"id":"3","fShopID":"f00103","fTitle":"心灵鸡汤","fImg":"./main/img/3.jpg","fPrice":"http://shadow.caa.edu.cn","fOldPrice":"对贡布里希先生的著作、所藏图书以及书信手稿等进行了整理和标引，并对书信手稿原件进行了扫描，方便读者检索和利用。","fNumber":"1","fSum":"0.00","furl":"http://shadow.caa.edu.cn"},
+{"id":"3","fShopID":"f00104","fTitle":"现在生活","fImg":"./main/img/4.jpg","fPrice":"http://210.33.124.16/dh","fOldPrice":"对互联网上8000余个艺术类网站进行了分门别类的采集和标引，方便读者检索和利用。","fNumber":"1","fSum":"0.00","furl":"http://210.33.124.16/dh"}
+]

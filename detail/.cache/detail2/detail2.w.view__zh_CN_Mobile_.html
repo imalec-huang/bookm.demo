@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cqqIvay" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqqIvay" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/bar/bar,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.xxx.cqqIvay, .xxa.cqqIvay{background-color: rgb(81, 197, 212); color: white; border-color: white} .xxa.cqqIvay:HOVER{background-color: white; color: rgb(81, 197, 212); border-color: rgb(81, 197, 212)} .tb-tabs.cuM7nay.cqqIvay .btn.active.cuM7nay.cqqIvay{color: rgb(81, 197, 212); border-bottom-color: rgb(81, 197, 212)} .table.cqqIvay th.cqqIvay, .table.cqqIvay td.cqqIvay{text-align: center}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cqqIvay" class="cqqIvay"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar cqqIvay" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqIvay"> 
+    <div class="x-panel-top cqqIvay" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:88}" __cid="cqqIvay"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar tb-index cqqIvay" style="background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cqqIvay"> 
+        <div class="x-titlebar-left cqqIvay" xid="div1" __cid="cqqIvay"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqqIvay" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;搜索&quot;}" __cid="cqqIvay"> 
+            <i xid="i6" class="icon-chevron-left cqqIvay" __cid="cqqIvay"/>  
+            <span xid="span6" __cid="cqqIvay" class="cqqIvay">搜索</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cqqIvay" xid="div20" __cid="cqqIvay" data-bind="event:{click:$model._callModelFn.bind($model, 'searchBtnClick')}"/>  
+        <div class="x-titlebar-right  cqqIvay" xid="div3" __cid="cqqIvay"> 
+          <div class="empty cqqIvay" __cid="cqqIvay"/> 
+        </div> 
+      </div>  
+      <div xid="div34" __cid="cqqIvay" class="cqqIvay"/> 
+    </div>  
+    <div xid="content" class="x-panel-content tb-trans cqqIvay" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqqIvay"> 
+      <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template hide cqqIvay" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" data-config="{&quot;data&quot;:&quot;goodsData&quot;}" __cid="cqqIvay"> 
+        <li xid="li1" class="media cqqIvay" __cid="cqqIvay"> 
+          <div xid="div10" class="media-left cqqIvay" __cid="cqqIvay"> 
+            <img alt="" xid="image1" class="img-rounded media-object cqqIvay" style="width:200px;height:260px;" height="210px" dir="rtl" __cid="cqqIvay" data-bind="attr:{src:ref(&quot;fImg&quot;)}"/> 
+          </div>  
+          <div class="media-body cqqIvay" xid="div14" __cid="cqqIvay"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output cqqIvay" xid="output2" style="font-size:large;line-height:50px;" data-bind="component:{ref:ref(&quot;fName&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cqqIvay"/>  
+            <div class="text-muted cqqIvay" xid="div35" style="line-height:30px;" __cid="cqqIvay"> 
+              <span xid="span39" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay">责任者：</span>  
+              <span xid="span38" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay" data-bind="text:ref(&quot;fWriter&quot;)"/> 
+            </div>  
+            <div class="text-muted cqqIvay" xid="div36" style="line-height:30px;" __cid="cqqIvay"> 
+              <span xid="span41" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay">出版发行项：</span>  
+              <span xid="span40" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay" data-bind="text:ref(&quot;fPublisher&quot;)"/> 
+            </div>  
+            <div class="text-muted cqqIvay" xid="div2" style="line-height:30px;" __cid="cqqIvay"> 
+              <span xid="span5" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay">ISBN：</span>  
+              <span xid="span4" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay" data-bind="text:ref(&quot;fIsbn&quot;)"/> 
+            </div>  
+            <div class="text-muted cqqIvay" xid="div15" style="line-height:30px;" __cid="cqqIvay"> 
+              <span xid="span11" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay">学科主题：</span>  
+              <span xid="span9" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay" data-bind="text:ref(&quot;fTitle&quot;)"/> 
+            </div>  
+            <div class="text-muted cqqIvay" xid="div4" style="line-height:30px;" __cid="cqqIvay"> 
+              <span xid="span8" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay">好评星级：</span>  
+              <span xid="span7" class="text-primary cqqIvay" style="color:#000000;" __cid="cqqIvay"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cqqIvay" xid="button4" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-star&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqqIvay"> 
+                  <i xid="i4" class="glyphicon glyphicon-star cqqIvay" __cid="cqqIvay"/>  
+                  <span xid="span10" __cid="cqqIvay" class="cqqIvay"/> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cqqIvay" xid="button5" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-star&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqqIvay"> 
+                  <i xid="i5" class="glyphicon glyphicon-star cqqIvay" __cid="cqqIvay"/>  
+                  <span xid="span12" __cid="cqqIvay" class="cqqIvay"/> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cqqIvay" xid="button7" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-star-empty&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqqIvay"> 
+                  <i xid="i7" class="glyphicon glyphicon-star-empty cqqIvay" __cid="cqqIvay"/>  
+                  <span xid="span13" __cid="cqqIvay" class="cqqIvay"/> 
+                </a> 
+              </span> 
+            </div>  
+            <div class="text-muted cqqIvay" xid="div5" style="line-height:30px;" __cid="cqqIvay"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cqqIvay" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqqIvay"> 
+                <div class="x-col cqqIvay" xid="col1" __cid="cqqIvay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default xxa cqqIvay" xid="button8" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-reload&quot;,&quot;label&quot;:&quot;  预约&quot;}" __cid="cqqIvay"> 
+                    <i xid="i8" class="icon-ios7-reload cqqIvay" __cid="cqqIvay"/>  
+                    <span xid="span20" __cid="cqqIvay" class="cqqIvay">预约</span> 
+                  </a> 
+                </div>  
+                <div class="x-col cqqIvay" xid="col2" __cid="cqqIvay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default xxa cqqIvay" xid="button9" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-information-outline&quot;,&quot;label&quot;:&quot;  借阅&quot;}" __cid="cqqIvay"> 
+                    <i xid="i9" class="icon-ios7-information-outline cqqIvay" __cid="cqqIvay"/>  
+                    <span xid="span21" __cid="cqqIvay" class="cqqIvay">借阅</span> 
+                  </a> 
+                </div>  
+                <div class="x-col cqqIvay" xid="col3" __cid="cqqIvay"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default xxa cqqIvay" xid="button10" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-star-outline&quot;,&quot;label&quot;:&quot;  收藏&quot;}" __cid="cqqIvay"> 
+                    <i xid="i10" class="icon-ios7-star-outline cqqIvay" __cid="cqqIvay"/>  
+                    <span xid="span19" __cid="cqqIvay" class="cqqIvay">收藏</span> 
+                  </a> 
+                </div>  
+                <div class="x-col cqqIvay" xid="col4" __cid="cqqIvay"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card panel-body pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar cqqIvay" xid="panel1" style="padding:0px;margin:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqIvay"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row text-muted h5 tb-nopadding cqqIvay" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cqqIvay"> 
+              <div class="col col-xs-4 text-center cqqIvay" xid="col11" style="text-align:center;" __cid="cqqIvay"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon cqqIvay" xid="button3" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-checkmark-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqqIvay"> 
+                  <i xid="i3" class="icon-ios7-checkmark-outline cqqIvay" __cid="cqqIvay"/>  
+                  <span xid="span3" __cid="cqqIvay" class="cqqIvay"/> 
+                </a>  
+                <span xid="span15" __cid="cqqIvay" class="cqqIvay" data-bind="text:ref('fStatus')"/> 
+              </div>  
+              <div class="col col-xs-4 text-center cqqIvay" xid="col12" style="text-align:center;" __cid="cqqIvay"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon cqqIvay" xid="button2" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-information-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqqIvay"> 
+                  <i xid="i2" class="icon-ios7-information-outline cqqIvay" __cid="cqqIvay"/>  
+                  <span xid="span2" __cid="cqqIvay" class="cqqIvay"/> 
+                </a>  
+                <span xid="span24" __cid="cqqIvay" class="cqqIvay">借阅</span>  
+                <span xid="span26" __cid="cqqIvay" class="cqqIvay" data-bind="text:ref(&quot;fTotal&quot;)"/>  
+                <span xid="span27" __cid="cqqIvay" class="cqqIvay">次</span> 
+              </div>  
+              <div class="col col-xs-4 text-center cqqIvay" xid="col13" style="text-align:center;" __cid="cqqIvay"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon cqqIvay" xid="button1" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:clickOpenPoint" data-config="{&quot;icon&quot;:&quot;icon-ios7-location-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqqIvay"> 
+                  <i xid="i1" class="icon-ios7-location-outline cqqIvay" __cid="cqqIvay"/>  
+                  <span xid="span1" __cid="cqqIvay" class="cqqIvay"/> 
+                </a>  
+                <span xid="span16" __cid="cqqIvay" class="cqqIvay">综合外借室</span> 
+              </div> 
+            </div>  
+            <style __cid="cqqIvay" class="cqqIvay">.x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pfd43751b6c6d46dfbc5586a1a93c9151-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card panel-body p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar cqqIvay" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqIvay"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cqqIvay" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqqIvay"> 
+              <div class="x-col cqqIvay" xid="col8" __cid="cqqIvay"> 
+                <div component="$model/UI2/system/components/justep/bar/bar" class="x-bar xxx cqqIvay" xid="bar1" data-bind="component:{name:'$model/UI2/system/components/justep/bar/bar'}" __cid="cqqIvay"> 
+                  <span xid="span33" style="width:100%;text-align:center;vertical-align:middle;font-size:large;font-family:微软雅黑;" __cid="cqqIvay" class="cqqIvay">图书摘要</span> 
+                </div> 
+              </div>  
+              <div class="x-col cqqIvay" xid="col9" __cid="cqqIvay"/>  
+              <div class="x-col cqqIvay" xid="col10" __cid="cqqIvay"/>  
+              <div class="x-col cqqIvay" xid="col14" __cid="cqqIvay"/> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cqqIvay" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqqIvay"> 
+              <div class="x-col cqqIvay" xid="col15" __cid="cqqIvay"> 
+                <div xid="div7" __cid="cqqIvay" class="cqqIvay"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cqqIvay" xid="output1" data-bind="component:{ref:ref(&quot;fDes&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cqqIvay"/> 
+                </div> 
+              </div> 
+            </div>  
+            <style __cid="cqqIvay" class="cqqIvay">.x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p38d1b14e5ca94caaa1b5a236bc2a1998-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card panel-body p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar cqqIvay" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqIvay"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cqqIvay" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqqIvay"> 
+              <div class="x-col cqqIvay" xid="col20" __cid="cqqIvay"> 
+                <div component="$model/UI2/system/components/justep/bar/bar" class="x-bar xxx cqqIvay" xid="bar2" data-bind="component:{name:'$model/UI2/system/components/justep/bar/bar'}" __cid="cqqIvay"> 
+                  <span xid="span34" style="width:100%;text-align:center;vertical-align:middle;font-size:large;font-family:微软雅黑;" __cid="cqqIvay" class="cqqIvay">场馆分布</span> 
+                </div> 
+              </div>  
+              <div class="x-col cqqIvay" xid="col21" __cid="cqqIvay"/>  
+              <div class="x-col cqqIvay" xid="col22" __cid="cqqIvay"/>  
+              <div class="x-col cqqIvay" xid="col19" __cid="cqqIvay"/> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cqqIvay" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqqIvay"> 
+              <div class="x-col cqqIvay" xid="col18" __cid="cqqIvay"> 
+                <table class="table table-bordered cqqIvay" component="$model/UI2/system/components/bootstrap/table/table" xid="table2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cqqIvay"> 
+                  <thead xid="thead2" __cid="cqqIvay" class="cqqIvay"> 
+                    <tr xid="tr3" __cid="cqqIvay" class="cqqIvay"> 
+                      <th xid="col36" __cid="cqqIvay" class="cqqIvay">索书号</th>  
+                      <th xid="col37" __cid="cqqIvay" class="cqqIvay">条形码</th>  
+                      <th xid="col38" __cid="cqqIvay" class="cqqIvay">场馆地</th>  
+                      <th xid="col39" __cid="cqqIvay" class="cqqIvay">书刊状态</th> 
+                    </tr> 
+                  </thead>  
+                  <tbody class="x-list-template cqqIvay" xid="listTemplate2" __cid="cqqIvay"> 
+                    <tr xid="tr4" __cid="cqqIvay" class="cqqIvay"> 
+                      <td xid="td14" __cid="cqqIvay" class="cqqIvay">I313.65/174</td>  
+                      <td xid="td15" __cid="cqqIvay" class="cqqIvay">CH0282980</td>  
+                      <td xid="td17" __cid="cqqIvay" class="cqqIvay">象山普通书库</td>  
+                      <td xid="td16" __cid="cqqIvay" class="cqqIvay">新书：正在上架</td> 
+                    </tr>  
+                    <tr xid="tr5" __cid="cqqIvay" class="cqqIvay"> 
+                      <td xid="td14" __cid="cqqIvay" class="cqqIvay">I313.65/174</td>  
+                      <td xid="td15" __cid="cqqIvay" class="cqqIvay">CH0282979</td>  
+                      <td xid="td17" __cid="cqqIvay" class="cqqIvay">南山综合外借室</td>  
+                      <td xid="td16" __cid="cqqIvay" class="cqqIvay">借出-应还日期：2016-04-15</td> 
+                    </tr> 
+                  </tbody> 
+                </table> 
+              </div> 
+            </div>  
+            <style __cid="cqqIvay" class="cqqIvay">.x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p04a9e5f93c584c8ba3f5d460314cf0bd-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div> 
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="cqqIvay" class="cqqIvay">.x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-top {height: 88px;}.x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-content { top: 88px;bottom: nullpx;}.x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-top {height: 108px;}.iosstatusbar .x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-content { top: 108px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-top {height: 88px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd83b48f39c8145cc8d0d6ddd1750cba3-iosstatusbar &gt;.x-panel-content {top: 88px;}</style> 
+  </div> 
+</div>

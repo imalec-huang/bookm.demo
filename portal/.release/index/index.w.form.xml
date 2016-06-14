@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cveymUj" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cveymUj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/wing/wing,$model/UI2/system/components/justep/wing/child,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.xxx.cveymUj{background-color: rgb(81, 197, 212); color: white; border-color: white} .xxx.cveymUj:HOVER{background-color: white; color: rgb(81, 197, 212); border-color: rgb(81, 197, 212)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cveymUj" class="cveymUj"/>  
+  <div component="$model/UI2/system/components/justep/wing/wing" class="x-wing cveymUj" xid="wing" data-bind="component:{name:'$model/UI2/system/components/justep/wing/wing'}" data-config="{&quot;display&quot;:&quot;push&quot;}" __cid="cveymUj"> 
+    <div class="x-wing-left cveymUj" xid="left" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cveymUj"></div>  
+    <div class="x-wing-content cveymUj" xid="content1" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cveymUj"> 
+      <div class="x-wing-backdrop cveymUj" xid="div1" __cid="cveymUj"/>  
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cveymUj" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="cveymUj">
+        <div class="x-contents-content active cveymUj" xid="main" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cveymUj">
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cveymUj" xid="mainContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/book/portal/main.w&quot;}" __cid="cveymUj">
+            <div component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMrYraa" class="cMrYraa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+              <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-white.cMrYraa{color: rgb(255, 255, 255)} .text-success.cMrYraa{color: rgb(50, 189, 96)} .x-titlebar.cMrYraa{height: 100%; background-color: rgba(0, 0, 0, 0.3); font-family: "微软雅黑"; border: 0} .x-titlebar.cMrYraa .btn.cMrYraa i.cMrYraa{font-size: 20px} .x-panel-top.cMrYraa{z-index: 100} .x-panel.cMrYraa &gt; .x-panel-content.cMrYraa{top: 0 !important} .x-panel.cMrYraa .no-iosstatusbar.cMrYraa &gt; .x-panel-content.cMrYraa{top: -20px !important} .x-bgImg.cMrYraa{background: url(@justepContextPath@/v_6e2aa0f6fc7d4763b15e0e91b1c00361l_zh_CNs_d_m/book/portal/img/index3Pic.jpg) no-repeat -200px 110px; background-size: 70%; font: 0.75em "microsoft yahei"} .x-img2.cMrYraa{width: 40px; height: 33px} .x-list.cMrYraa{margin-top: 25%} .x-list.cMrYraa .col-xs-12.cMrYraa{margin-bottom: 30px; padding-left: 0px; padding-right: 0px} .x-list.cMrYraa .col-xs-12.cMrYraa &gt; div.cMrYraa{border: 1px solid rgb(81, 197, 212); margin: 0 auto; width: 90px; height: 90px; border-radius: 65px; padding-top: 15px; position: absolute} .x-list.cMrYraa .col-xs-12.cMrYraa:nth-child(1) &gt; div.cMrYraa{background-color: rgb(81, 197, 212); left: 25%; top: 0px} .x-list.cMrYraa .col-xs-12.cMrYraa:nth-child(2) &gt; div.cMrYraa{background-color: rgb(81, 197, 212); left: 38%; top: 60px} .x-list.cMrYraa .col-xs-12.cMrYraa:nth-child(3) &gt; div.cMrYraa{background-color: rgb(81, 197, 212); left: 45%; top: 150px} .x-list.cMrYraa .col-xs-12.cMrYraa:nth-child(4) &gt; div.cMrYraa{background-color: rgb(81, 197, 212); left: 45%; top: 250px} .x-list.cMrYraa .col-xs-12.cMrYraa:nth-child(5) &gt; div.cMrYraa{background-color: rgb(81, 197, 212); left: 38%; top: 340px} .x-list.cMrYraa .col-xs-12.cMrYraa:nth-child(6) &gt; div.cMrYraa{background-color: rgb(81, 197, 212); left: 25%; top: 400px}</style>  
+              <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:onLoadModel" __cid="cMrYraa" class="cMrYraa"></div>  
+              <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pb306d530e7014d10822dc749786aaef2-iosstatusbar cMrYraa" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMrYraa">  
+                <div class="x-panel-top cMrYraa" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:48}" __cid="cMrYraa"> 
+                  <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cMrYraa" style="background-color:#51c5d4;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cMrYraa"> 
+                    <div class="x-titlebar-left cMrYraa" __cid="cMrYraa"/>  
+                    <div class="x-titlebar-title  text-success cMrYraa" __cid="cMrYraa"> 
+                      <span xid="span2" style="color:#FFFFFF;" __cid="cMrYraa" class="cMrYraa">图书馆</span> 
+                    </div>  
+                    <div class="x-titlebar-right  cMrYraa" __cid="cMrYraa"> 
+                      <div class="empty cMrYraa" __cid="cMrYraa"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-panel-content x-bgImg cMrYraa" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMrYraa"> 
+                  <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template hide cMrYraa" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;filter&quot;:&quot; $row.val(\&quot;fID\&quot;)!=-1&quot;}" __cid="cMrYraa"> 
+                    <li xid="li2" class="col-xs-12 text-center cMrYraa" __cid="cMrYraa"> 
+                      <div __cid="cMrYraa" class="cMrYraa" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                        <img class="x-img2 cMrYraa" __cid="cMrYraa" data-bind="attr:{src:$model.transUrl($object)}"/>  
+                        <h5 class="text-white cMrYraa" __cid="cMrYraa" data-bind="text:ref('fClassName')">关于我们</h5> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div>  
+                <div class="x-panel-bottom cMrYraa" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMrYraa"> 
+                  <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cMrYraa" style="background-color:#51c5d4;" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cMrYraa"> 
+                    <div class="x-titlebar-left cMrYraa" xid="left1" __cid="cMrYraa"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon cMrYraa" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-qrcode&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cMrYraa"> 
+                        <i xid="i1" class="glyphicon glyphicon-qrcode cMrYraa" __cid="cMrYraa"/>  
+                        <span xid="span3" __cid="cMrYraa" class="cMrYraa"/> 
+                      </a> 
+                    </div>  
+                    <div class="x-titlebar-title  text-success cMrYraa" xid="title1" __cid="cMrYraa"/>  
+                    <div class="x-titlebar-right  cMrYraa" xid="right1" __cid="cMrYraa"> 
+                      <div class="empty cMrYraa" __cid="cMrYraa"/>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon cMrYraa" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-erase&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cMrYraa"> 
+                        <i xid="i2" class="glyphicon glyphicon-erase cMrYraa" __cid="cMrYraa"/>  
+                        <span xid="span4" __cid="cMrYraa" class="cMrYraa"/> 
+                      </a> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cMrYraa" class="cMrYraa">.x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb306d530e7014d10822dc749786aaef2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div> 
+</div>

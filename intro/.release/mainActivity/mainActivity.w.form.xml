@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cRjmeey" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRjmeey" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-pinch-table.cRjmeey{width: 100%; height: 100%; display: table; position: relative} .x-pinch-table-cell.cRjmeey{display: table-cell; vertical-align: middle; text-align: center; padding: 10px; position: absolute; top: 50%; left: 50%} .x-pinch-tableCell.cRjmeey a.cRjmeey{display: block; position: relative; top: -50%; left: -50%} .x-swipe-area.cRjmeey{text-align: center; padding-top: 40px; font-size: 1.5em; background: red; color: white; width: 100px; position: absolute; top: 0; height: 100%; transform: translate3d(100%, 0, 0); -webkit-transform: translate3d(100%, 0, 0); right: 0} .x-list.cRjmeey{overflow-x: hidden}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cRjmeey" class="cRjmeey"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar cRjmeey" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRjmeey"> 
+    <div class="x-panel-top cRjmeey" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRjmeey"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cRjmeey" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;touch相关效果&quot;}" __cid="cRjmeey"> 
+        <div class="x-titlebar-left cRjmeey" xid="div4" __cid="cRjmeey"> 
+          <a component="$model/UI2/system/components/justep/button/button" xid="button2" class="btn btn-link btn-only-icon cRjmeey" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cRjmeey"> 
+            <i xid="i2" class="icon-chevron-left cRjmeey" __cid="cRjmeey"/>  
+            <span xid="span2" __cid="cRjmeey" class="cRjmeey"/>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cRjmeey" xid="div5" __cid="cRjmeey">touch相关效果</div>  
+        <div class="x-titlebar-right  cRjmeey" xid="div6" __cid="cRjmeey">
+          <div class="empty cRjmeey" __cid="cRjmeey"/>
+        </div>
+      </div> 
+    </div>
+    <div class="x-panel-content cRjmeey" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRjmeey">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cRjmeey" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;wrap&quot;:false}" __cid="cRjmeey"> 
+        <div class="x-contents-content active cRjmeey" xid="rotateContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cRjmeey"> 
+          <img src="$model/UI2/book/intro/img/cloud.png" alt="" xid="rotate" style="height:196px;width:184px;" __cid="cRjmeey" class="cRjmeey"/>
+        </div>  
+        <div class="x-contents-content cRjmeey" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cRjmeey"> 
+          <div xid="div19" class="x-pinch-table cRjmeey" __cid="cRjmeey"> 
+            <div xid="div20" class="x-pinch-table-cell cRjmeey" __cid="cRjmeey"> 
+              <img src="$model/UI2/book/intro/img/1024.jpg" alt="" xid="pinch" style="height:196px;width:184px;" __cid="cRjmeey" class="cRjmeey"/>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content cRjmeey" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cRjmeey"> 
+          <img src="$model/UI2/book/intro/img/cloud.png" alt="" xid="drag" style="height:196px;width:184px;" __cid="cRjmeey" class="cRjmeey"/>
+        </div>  
+        <div class="x-contents-content cRjmeey" xid="newsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cRjmeey"> 
+          <div class="x-scroll cRjmeey" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="demoList" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cRjmeey"> 
+            <div class="x-content-center x-pull-down container cRjmeey" xid="div15" __cid="cRjmeey"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cRjmeey" xid="i7" __cid="cRjmeey"/>  
+              <span class="x-pull-down-label cRjmeey" xid="span6" __cid="cRjmeey">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cRjmeey" xid="div14" __cid="cRjmeey"> 
+              <div xid="newsList" class="x-list cRjmeey" component="$model/UI2/system/components/justep/list/list" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:8}" __cid="cRjmeey"> 
+                <ul class="x-list-template hide cRjmeey" style="padding-top:6px;" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_newsList($element),afterRender:$model.foreach_afterRender_newsList.bind($model,$element)}" __cid="cRjmeey"> 
+                  <li class="media cRjmeey" style="padding-left:6px; padding-right:6px;overflow:visible;position:relative;display:block;" xid="li1" __cid="cRjmeey"> 
+                    <div style="overflow:hidden;" xid="div21" __cid="cRjmeey" class="cRjmeey"> 
+                      <div class="x-blob x-blob-radius pull-left media-object x-news-image cRjmeey" xid="div16" __cid="cRjmeey"> 
+                        <img class="x-blob-img x-autofill cRjmeey" bind-attr-src="$model.getImageUrl($object)" xid="image4" __cid="cRjmeey"/>
+                      </div>  
+                      <div class="media-body cRjmeey" xid="div17" __cid="cRjmeey"> 
+                        <h4 class="media-heading cRjmeey" bind-text="ref('fTitle')" xid="h41" __cid="cRjmeey"/>  
+                        <div bind-text="ref('fContent')" xid="div18" __cid="cRjmeey" class="cRjmeey"/>
+                      </div> 
+                    </div>  
+                    <div class="x-swipe-area cRjmeey" xid="div22" __cid="cRjmeey">删除</div>
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cRjmeey" xid="div13" __cid="cRjmeey"> 
+              <span class="x-pull-up-label cRjmeey" xid="span7" __cid="cRjmeey">加载更多...</span>
+            </div> 
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cRjmeey" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRjmeey">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cRjmeey" xid="buttonGroup1" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cRjmeey">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRjmeey" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;单指旋转&quot;,&quot;target&quot;:&quot;rotateContent&quot;}" __cid="cRjmeey"> 
+          <i xid="i4" __cid="cRjmeey" class="cRjmeey"/>  
+          <span xid="span4" __cid="cRjmeey" class="cRjmeey">单指旋转</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRjmeey" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;双指缩放&quot;,&quot;target&quot;:&quot;content2&quot;}" __cid="cRjmeey"> 
+          <i xid="i5" __cid="cRjmeey" class="cRjmeey"/>  
+          <span xid="span5" __cid="cRjmeey" class="cRjmeey">双指缩放</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRjmeey" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;拖拽&quot;,&quot;target&quot;:&quot;content5&quot;}" __cid="cRjmeey"> 
+          <i xid="i6" __cid="cRjmeey" class="cRjmeey"/>  
+          <span xid="span8" __cid="cRjmeey" class="cRjmeey">拖拽</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRjmeey" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;滑动删除&quot;,&quot;target&quot;:&quot;newsContent&quot;}" __cid="cRjmeey"> 
+          <i xid="i8" __cid="cRjmeey" class="cRjmeey"/>  
+          <span xid="span9" __cid="cRjmeey" class="cRjmeey">滑动删除</span>
+        </a>
+      </div>
+    </div>  
+    <style __cid="cRjmeey" class="cRjmeey">.x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb2db380ff6b941d59833a9f6e436d60a-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.text-white{ color:#fff;}
+.text-success{ color:#32bd60;}
+
+.x-titlebar{ height:100%; background-color:rgba(0, 0, 0, 0.3); font-family:"微软雅黑"; border:0;}
+.x-titlebar .btn i{ font-size:20px;}
+
+.x-panel-top { z-index:100;}
+.x-panel >.x-panel-content{ top:0 !important;}
+.x-panel .no-iosstatusbar  >.x-panel-content{ top:-20px!important; }
+
+.x-bgImg{background: url('./img/index3Pic.jpg') no-repeat -200px 110px; background-size:70%; font:0.75em 'microsoft yahei';}
+.x-img2{ width:40px; height:33px;}
+
+.x-list{ margin-top:25%;}
+.x-list .col-xs-12{ margin-bottom:30px; padding-left:0px; padding-right:0px;}
+.x-list .col-xs-12 > div{border:1px solid #51c5d4; margin:0 auto; width:90px; height:90px; border-radius:65px; padding-top:15px; position:absolute;}
+.x-list .col-xs-12:nth-child(1) > div{ background-color:#51c5d4; left:25%; top:0px;}
+.x-list .col-xs-12:nth-child(2) > div{ background-color:#51c5d4; left:38%; top:60px;}
+.x-list .col-xs-12:nth-child(3) > div{ background-color:#51c5d4; left:45%; top:150px;}
+.x-list .col-xs-12:nth-child(4) > div{ background-color:#51c5d4; left:45%; top:250px;}
+.x-list .col-xs-12:nth-child(5) > div{ background-color:#51c5d4; left:38%; top:340px;}
+.x-list .col-xs-12:nth-child(6) > div{ background-color:#51c5d4; left:25%; top:400px;} 
+

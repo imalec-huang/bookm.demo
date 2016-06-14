@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cEFFVby" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEFFVby" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/wing/wing,$model/UI2/system/components/justep/wing/child,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cEFFVby" class="cEFFVby"/>  
+  <div component="$model/UI2/system/components/justep/wing/wing" class="x-wing x-wing-xs cEFFVby" xid="wing" data-bind="component:{name:'$model/UI2/system/components/justep/wing/wing'}" data-config="{&quot;display&quot;:&quot;push&quot;,&quot;routable&quot;:false}" __cid="cEFFVby"> 
+    <div class="x-wing-left cEFFVby" xid="left" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cEFFVby"/>  
+    <div class="x-wing-content cEFFVby" xid="conter" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cEFFVby"> 
+      <div class="x-wing-backdrop cEFFVby" xid="div1" __cid="cEFFVby"/>  
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cEFFVby" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false}" __cid="cEFFVby"> 
+        <div class="x-contents-content active cEFFVby" xid="login" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cEFFVby"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cEFFVby" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true,&quot;routable&quot;:true,&quot;src&quot;:&quot;$model/UI2/book/login/login.w&quot;}" __cid="cEFFVby">
+            <div xid="window" class="window ciYruUr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciYruUr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+              <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.input-group-addon.ciYruUr{border: none; background-color: transparent} .form-control.ciYruUr{border: none} .x-panel-content.ciYruUr &gt; .list-group-item.ciYruUr{border: none} .spacing.ciYruUr{margin-bottom: 10px} .x-toggle.ciYruUr{margin-top: -8px}</style>  
+              <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciYruUr" class="ciYruUr"></div>  
+              <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p1840df656ff34e69a8ec0c4157822996-iosstatusbar ciYruUr" xid="panel1" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciYruUr">  
+                <div class="x-panel-top ciYruUr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYruUr"> 
+                  <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciYruUr" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ciYruUr"> 
+                    <div class="x-titlebar-left ciYruUr" xid="left1" __cid="ciYruUr"/>  
+                    <div class="x-titlebar-title ciYruUr" xid="title1" __cid="ciYruUr"> 
+                      <span xid="span1" style="font-weight:normal;" __cid="ciYruUr" class="ciYruUr">登录</span> 
+                    </div>  
+                    <div class="x-titlebar-right  ciYruUr" xid="right1" __cid="ciYruUr"> 
+                      <div class="empty ciYruUr" __cid="ciYruUr"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-panel-content ciYruUr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYruUr"> 
+                  <ul xid="ul2" __cid="ciYruUr" class="ciYruUr"> 
+                    <li class="list-group-item ciYruUr" xid="li1" __cid="ciYruUr"> 
+                      <div class="input-group ciYruUr" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="ciYruUr"> 
+                        <span class="input-group-addon ciYruUr" xid="span4" __cid="ciYruUr">账号</span>  
+                        <input type="text" class="form-control ciYruUr" component="$model/UI2/system/components/justep/input/input" xid="nameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入账号&quot;}" __cid="ciYruUr"/> 
+                      </div> 
+                    </li>  
+                    <li class="list-group-item ciYruUr" xid="li1" __cid="ciYruUr"> 
+                      <div class="input-group ciYruUr" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="ciYruUr"> 
+                        <span class="input-group-addon ciYruUr" xid="span5" __cid="ciYruUr">密码</span>  
+                        <input component="$model/UI2/system/components/justep/input/password" class="form-control ciYruUr" xid="passwordInput" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入密码&quot;}" __cid="ciYruUr"/> 
+                      </div> 
+                    </li> 
+                  </ul>  
+                  <div class="spacing list-group-item ciYruUr" xid="div1" __cid="ciYruUr"> 
+                    <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle x-toggle-xs pull-right ciYruUr" xid="toggle2" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;OFF&quot;,&quot;on&quot;:&quot;ON&quot;}}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" __cid="ciYruUr"> 
+                      <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciYruUr" class="ciYruUr"></input>  
+                      <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="ON" data-off="OFF" __cid="ciYruUr" class="ciYruUr">  
+                        <span __cid="ciYruUr" class="ciYruUr"/> 
+                      </label> 
+                    </span>  
+                    <span xid="span6" __cid="ciYruUr" class="ciYruUr">自动登录</span> 
+                  </div>  
+                  <div xid="div5" class="list-group-item ciYruUr" __cid="ciYruUr"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block ciYruUr" xid="loginBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="ciYruUr"> 
+                      <i xid="i1" __cid="ciYruUr" class="ciYruUr"/>  
+                      <span xid="span2" __cid="ciYruUr" class="ciYruUr">登录</span> 
+                    </a> 
+                  </div>  
+                  <div xid="div6" class="list-group-item ciYruUr" align="center" __cid="ciYruUr"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciYruUr" xid="registerBtn" url="/book/register/register.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;label&quot;:&quot;注册账号&quot;}" __cid="ciYruUr"> 
+                      <i xid="i2" __cid="ciYruUr" class="ciYruUr"/>  
+                      <span xid="span7" __cid="ciYruUr" class="ciYruUr">注册账号</span> 
+                    </a>  
+                    <i xid="i4" class="icon-ios7-information-empty ciYruUr" __cid="ciYruUr"/>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciYruUr" xid="forgetBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;忘记密码&quot;}" __cid="ciYruUr"> 
+                      <i xid="i3" __cid="ciYruUr" class="ciYruUr"/>  
+                      <span xid="span8" __cid="ciYruUr" class="ciYruUr">忘记密码</span> 
+                    </a> 
+                  </div> 
+                </div>  
+                <div class="x-panel-bottom ciYruUr" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:100}" __cid="ciYruUr"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row text-center ciYruUr" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciYruUr"> 
+                    <div class="x-col ciYruUr" xid="col10" __cid="ciYruUr"> 
+                      <img src="" alt="" xid="image1" height="40px" style="width:40;" __cid="ciYruUr" class="ciYruUr" data-bind="attr:{src:$model.toUrl('./img/weixin.png')}"/> 
+                    </div>  
+                    <div class="x-col ciYruUr" xid="col11" __cid="ciYruUr"> 
+                      <img src="" alt="" xid="image2" height="40" style="width:40;" __cid="ciYruUr" class="ciYruUr" data-bind="attr:{src:$model.toUrl('./img/weibo.png')}"/> 
+                    </div>  
+                    <div class="x-col ciYruUr" xid="col12" __cid="ciYruUr"> 
+                      <img src="" alt="" xid="image3" height="40" style="width:40;" __cid="ciYruUr" class="ciYruUr" data-bind="attr:{src:$model.toUrl('./img/qq.png')}"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="ciYruUr" class="ciYruUr">.x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 100px;}.x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-bottom {height: 100px;}.iosstatusbar .x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1840df656ff34e69a8ec0c4157822996-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+              </div> 
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>
